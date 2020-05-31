@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btn_login.setOnClickListener(this);
     }
 
+
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onSuccess(Login_Bean login_bean) {
+        //登陆成功
         Toast.makeText(this, "登陆成功", Toast.LENGTH_SHORT).show();
     }
 
